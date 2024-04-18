@@ -27,7 +27,7 @@
     @apply uppercase text-gray;
 }
 .label-2 {
-    @apply uppercase text-sm text-gray;
+    @apply uppercase text-sm ;
 }
 
 .box-1 {
@@ -40,4 +40,29 @@
 
 .card-no {
     @apply text-center items-center justify-center text-[1.8rem] w-full block font-light;
+}
+
+.active {
+    background-color: orange;
+}
+.not-active {
+    background-color: blue;
+}
+.color-bitcoin-incnot-action {
+    @apply bg-orange;
+}
+
+.card {
+    @apply w-full h-max flex p-3 drop-shadow-xl rounded-xl flex-col gap-3 text-white;
+}
+
+.color-ninja-banknot-action{
+    @apply bg-gray;
+}
+
+.color-block-chain-incnot-action{
+    @apply bg-purple;
+}
+.color-evil-corpnot-action{
+    @apply bg-red;
 }

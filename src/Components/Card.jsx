@@ -32,15 +32,14 @@ const Card = ({ cardData, onClick, active }) => {
   };
 
   // Add the 'active' class if the card is active
-  const cardClass = getVendorClass(cardData.vendor) + (active ? "active" : "");
+  const cardClass =
+    getVendorClass(cardData.vendor) + (active ? "active" : "not-action");
 
   return (
     <div className="w-full h-max flex items-center flex-col gap-3">
+      {/* <h1>{cardClass}</h1> */}
       <p className="uppercase font-semibold text-gray">Active card</p>
-      <div
-        // className={cardClass}
-        onClick={onClick}
-        className="bg-[orange] w-full h-max flex p-3 drop-shadow-xl rounded-xl flex-col gap-3">
+      <div className={cardClass} onClick={onClick}>
         <div className="w-full justify-between flex items-center">
           <img
             src={vendorChip(cardData.vendor)}
