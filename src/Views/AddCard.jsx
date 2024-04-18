@@ -25,8 +25,8 @@ const AddCard = () => {
   };
 
   return (
-    <div className="add-card">
-      <Top />
+    <div className="section">
+      <Top title={"Add a new bank card"} />
       <CardPreview cardDetails={cardDetails} />
       <CardForm
         cardDetails={cardDetails}

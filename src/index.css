@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* SECTIONS */
+.section {
+    @apply w-screen h-screen flex flex-col items-center p-5 justify-between;
+}
+
+
+/* BUTTONS */
+.btn-primary {
+    @apply  hover:bg-black hover:text-white;
+}
+
+.btn-secound {
+    @apply hover:bg-white hover:text-black text-white bg-black;
+}
+
+.btn {
+    @apply uppercase font-semibold border border-black rounded-xl w-full text-center p-5 flex items-center justify-center cursor-pointer transition-all;
+}
+
+.label {
+    @apply uppercase;
+}
+
+.box-1 {
+    @apply flex flex-col gap-1;
+}
+
+.input-1 {
+    @apply border border-black p-5 rounded-xl;
+}

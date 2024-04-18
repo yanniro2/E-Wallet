@@ -31,16 +31,14 @@ const Home = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center p-5 justify-between">
-      <Top />
+    <div className="section">
+      <Top title={"e-wallet"} />
       <CardStack
         cards={cards}
         activeCardIndex={activeCardIndex}
         getVendorIconPath={getVendorIconPath}
       />
-      <Link
-        to="/addcard"
-        className="uppercase font-semibold border border-black rounded-xl w-full text-center p-5 flex items-center justify-center cursor-pointer hover:bg-black hover:text-white transition-all">
+      <Link to="/addcard" className="btn btn-primary">
         Add a New Card
       </Link>
     </div>

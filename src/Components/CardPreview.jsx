@@ -50,18 +50,18 @@ const CardPreview = ({ cardDetails }) => {
   const cardColorClass = getCardColorClass(cardDetails.vendor);
 
   return (
-    <div className={`card-preview ${cardColorClass}`}>
-      {chipImageSrc && <img src={chipImageSrc} className="card-chip" alt="Chip" />}
-      {vendorIconSrc && <img src={vendorIconSrc} className="card-vendor-icon" alt="Vendor Icon" />}
-      <div className="card-number">{cardDetails.number || '•••• •••• •••• ••••'}</div>
-      <div className="card-holder-expiry">
-        <div className="card-holder-section">
-          <span className="card-info-label">CARDHOLDER NAME</span>
-          <span className="card-holder">{cardDetails.holder || 'FIRSTNAME LASTNAME'}</span>
+    <div>
+      {chipImageSrc && <img src={chipImageSrc} alt="Chip" />}
+      {vendorIconSrc && <img src={vendorIconSrc} alt="Vendor Icon" />}
+      <div>{cardDetails.number || "•••• •••• •••• ••••"}</div>
+      <div>
+        <div>
+          <span>CARDHOLDER NAME</span>
+          <span>{cardDetails.holder || "FIRSTNAME LASTNAME"}</span>
         </div>
-        <div className="card-expiry-section">
-          <span className="card-info-label">VALID THRU</span>
-          <span className="card-expiry">{cardDetails.expiry || 'MM/YY'}</span>
+        <div>
+          <span>VALID THRU</span>
+          <span>{cardDetails.expiry || "MM/YY"}</span>
         </div>
       </div>
     </div>
