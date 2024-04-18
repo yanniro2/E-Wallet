@@ -1,0 +1,18 @@
+/* card-styles.css */
+.card {
+    /* Shared styles for all cards */
+    transition: transform 0.5s ease, z-index 0s linear 0.5s;
+    cursor: pointer;
+  }
+
+  .card.active {
+    /* Styles for active card */
+    z-index: 10;
+    /* Add any additional styling for active card */
+  }
+
+  .card:not(.active) {
+    /* Styles for inactive cards */
+    z-index: 1;
+    /* Adjust visibility if needed */
+  }
