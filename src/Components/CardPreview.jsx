@@ -51,26 +51,19 @@ const CardPreview = ({ cardDetails }) => {
 
   return (
     <div className="w-full h-max flex items-center flex-col gap-3">
-      <p className="uppercase font-semibold text-gray">Active card</p>
-      <div className="bg-[orange] w-full h-max flex p-3 drop-shadow-xl rounded-xl flex-col gap-5">
-        {/* {chipImageSrc && (
-        // <img
-        //   src={chipImageSrc}
-        //   alt="Chip"
-        //   width="100"
-        //   height="100"
-        //   className="w-full h-full flex object-contain"
-        // />
-        <h1>{chipImageSrc}</h1>
-      )} */}
-        {/* {BitcoinIcon && <img src={BitcoinIcon} alt="Vendor Icon" />} */}
+      <p className="uppercase font-semibold text-gray">New card</p>
+      <div className="bg-[#0000001A] w-full h-max flex p-3 drop-shadow-xl rounded-xl flex-col gap-5">
         <div className="w-full justify-between flex items-center">
-          <img src={ChipDark} alt="img" width={50} height={50} className />
-          <img src={BitcoinIcon} alt="img" width={25} height={25} className />
+          {BitcoinIcon && (
+            <img src={BitcoinIcon} alt="Vendor Icon" width={25} height={25} />
+          )}
+          {chipImageSrc && <img src={chipImageSrc} width={25} height={25} />}
+          {/* <img src={ChipDark} alt="img" width={50} height={50} className />
+          <img src={BitcoinIcon} alt="img" width={25} height={25} className /> */}
         </div>
-        <div className="text-center items-center justify-center text-[1.8rem] w-full block font-light">
-          {/* {cardDetails.number || "•••• •••• •••• ••••"} */}
-          1234 5678 1234 3456
+        <div className="card-no">
+          {cardDetails.number || "•••• •••• •••• ••••"}
+          {/* 1234 5678 1234 3456 */}
         </div>
         <div className="w-full flex items-center justify-between">
           <div className="flex flex-col">

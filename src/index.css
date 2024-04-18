@@ -37,3 +37,7 @@
 .input-1 {
     @apply border border-black p-5 rounded-xl;
 }
+
+.card-no {
+    @apply text-center items-center justify-center text-[1.8rem] w-full block font-light;
+}
