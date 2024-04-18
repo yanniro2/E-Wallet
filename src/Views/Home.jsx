@@ -31,15 +31,16 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="w-screen h-screen flex flex-col items-center p-5 justify-between">
       <Top />
       <CardStack
         cards={cards}
         activeCardIndex={activeCardIndex}
         getVendorIconPath={getVendorIconPath}
       />
-      <Link to="/addcard" className="add-card-link">
+      <Link
+        to="/addcard"
+        className="uppercase font-semibold border border-black rounded-xl w-full text-center p-5 flex items-center justify-center cursor-pointer hover:bg-black hover:text-white transition-all">
         Add a New Card
       </Link>
     </div>

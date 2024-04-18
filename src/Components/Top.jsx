@@ -1,10 +1,10 @@
 import React from 'react';
-import './card-form.css'
+// import './card-form.css'
 
 const Top = () => {
   return (
-    <header className="top-header">
-      <h1 className="home-link">ADD A NEW BANK CARD</h1>
+    <header className="text-center">
+      <h1 className="text-[2rem] font-semibold uppercase">E-wallet</h1>
     </header>
   );
 };

@@ -6,7 +6,7 @@ import EvilIcon from '../assets/vendor-evil.svg';
 import NinjaIcon from '../assets/vendor-ninja.svg';
 import ChipDark from '../assets/chip-dark.svg';
 import ChipLight from '../assets/chip-light.svg';
-import './card-styles.css'; // Import styles
+// import './card-styles.css'; // Import styles
 
 const getVendorClass = (vendor) => {
   return `card card-preview color-${vendor.replace(/\s+/g, '-').toLowerCase()}`;

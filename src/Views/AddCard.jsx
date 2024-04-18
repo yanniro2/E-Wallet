@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate from 'reac
 import Top from '../Components/Top';
 import CardForm from '../Components/CardForm';
 import CardPreview from '../Components/CardPreview';
-import '../Components/card-form.css'; // Your AddCard component's CSS
+// import '../Components/card-form.css'; // Your AddCard component's CSS
 
 const AddCard = () => {
   const dispatch = useDispatch();
@@ -28,9 +28,9 @@ const AddCard = () => {
     <div className="add-card">
       <Top />
       <CardPreview cardDetails={cardDetails} />
-      <CardForm 
-        cardDetails={cardDetails} 
-        setCardDetails={setCardDetails} 
+      <CardForm
+        cardDetails={cardDetails}
+        setCardDetails={setCardDetails}
         onSubmit={handleAddCard}
       />
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { addCard } from '../Redux/CardSlice';
-import './card-form.css';
+// import './card-form.css';
 
 const CardForm = ({ cardDetails, setCardDetails }) => {
   const dispatch = useDispatch();

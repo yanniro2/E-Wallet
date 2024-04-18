@@ -5,7 +5,7 @@ import EvilIcon from '../assets/vendor-evil.svg';
 import NinjaIcon from '../assets/vendor-ninja.svg';
 import ChipDark from '../assets/chip-dark.svg';
 import ChipLight from '../assets/chip-light.svg';
-import './card-form.css';
+// import './card-form.css';
 
 const CardPreview = ({ cardDetails }) => {
   // Function to get the corresponding SVG based on the vendor

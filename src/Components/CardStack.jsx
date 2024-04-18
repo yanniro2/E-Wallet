@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Card from './Card';
-import './card-styles.css'; // Import styles
+// import './card-styles.css'; // Import styles
 
 const CardStack = ({ cards }) => {
   const [activeCardId, setActiveCardId] = useState(null); // State to track the active card ID
