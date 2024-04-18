@@ -50,17 +50,20 @@ const CardPreview = ({ cardDetails }) => {
   const cardColorClass = getCardColorClass(cardDetails.vendor);
 
   return (
-    <div>
+    <div className="bg-[orange] w-full h-max flex p-3 drop-shadow-xl rounded-xl flex-col gap-5">
       {chipImageSrc && <img src={chipImageSrc} alt="Chip" />}
       {vendorIconSrc && <img src={vendorIconSrc} alt="Vendor Icon" />}
-      <div>{cardDetails.number || "•••• •••• •••• ••••"}</div>
-      <div>
-        <div>
-          <span>CARDHOLDER NAME</span>
+      <div className="text-center items-center justify-center text-[1.8rem] w-full block">
+        {cardDetails.number || "•••• •••• •••• ••••"}
+        {/* 1234 5678 1234 3456 */}
+      </div>
+      <div className="w-full flex items-center justify-between">
+        <div className="flex flex-col">
+          <span className="label-2">CARDHOLDER NAME</span>
           <span>{cardDetails.holder || "FIRSTNAME LASTNAME"}</span>
         </div>
-        <div>
-          <span>VALID THRU</span>
+        <div className="flex flex-col">
+          <span className="label-2">VALID THRU</span>
           <span>{cardDetails.expiry || "MM/YY"}</span>
         </div>
       </div>
