@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import Card from './Card';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import Card from "./Card";
 // import './card-styles.css'; // Import styles
 
 const CardStack = ({ cards }) => {
@@ -11,9 +13,9 @@ const CardStack = ({ cards }) => {
   };
 
   return (
-    <div className="card-stack">
+    <div className="w-full h-full flex flex-col justify-around">
       {cards.map((cardData) => (
-        <div className="card-wrapper" key={cardData.id}>
+        <div key={cardData.id}>
           <Card
             cardData={cardData}
             isActive={cardData.id === activeCardId} // Pass isActive prop based on active card ID

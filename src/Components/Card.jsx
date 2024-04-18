@@ -38,7 +38,7 @@ const Card = ({ cardData, onClick, active }) => {
   return (
     <div className="w-full h-max flex items-center flex-col gap-3">
       {/* <h1>{cardClass}</h1> */}
-      <p className="uppercase font-semibold text-gray">Active card</p>
+      {/* <p className="uppercase font-semibold text-gray">Active card</p> */}
       <div className={cardClass} onClick={onClick}>
         <div className="w-full justify-between flex items-center">
           <img
