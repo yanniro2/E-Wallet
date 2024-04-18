@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
 
 /* SECTIONS */
 .section {
-    @apply w-screen h-screen flex flex-col items-center p-5 justify-between;
+    @apply w-screen h-screen flex flex-col items-center p-3 justify-between gap-3;
 }
 
 
@@ -23,10 +24,10 @@
 }
 
 .label {
-    @apply uppercase;
+    @apply uppercase text-gray;
 }
 .label-2 {
-    @apply uppercase text-sm text-gray-700;
+    @apply uppercase text-sm text-gray;
 }
 
 .box-1 {

@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <div className="App">
+        <div className="App font-ptMono">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/addcard" element={<AddCard />} />
